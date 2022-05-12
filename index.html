@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SWAPI JS M11</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="content js-content">
+  <div class="search search_block js-search_block">
+    <form class="search_form js-search_form">
+      <select class="select_search js-select_search">
+        <option value="people" class="option_search js_option_search_person">Поиск персонажа:</option>
+        <option value="starships" class="option_search js_option_search_ship">Поиск корабля:</option>
+        <option value="planets" class="option_search js_option_search_planet">Поиск планеты:</option>
+      </select>
+      <input type="text" class="input_search js-input_search" id="search_input">
+      <button id="search_request_btn" class="button js-button" type="submit">Найти</button>
+    </form>
+  </div>
+  <template class="template js-template">
+    <table class="table js-table">
+      <tr><td>Имя: </td><td id="cell_for_name" class="js-cell_for_name"></td></tr>
+      <tr><td>Рост: </td><td id="cell_for_height" class="js-cell_for_height"></td></tr>
+      <tr><td>Вес: </td><td id="cell_for_mass" class="js-cell_for_mass"></td></tr>
+      <tr><td>Год рождения: </td><td id="cell_for_birth_year" class="js-cell_for_birth_year"></td></tr>
+      <tr><td>В скольки фильмах появлялся: </td><td id="cell_for_films_count" class="js-cell_for_films_count"></td></tr>
+    </table>
+  </template>
+</div>
+<script src="./createNewElem.js"></script>
+<script src="./requestFetch.js"></script>
+<script src="./displayResultDetails.js"></script>
+<script src="./displayResultsList.js"></script>
+<script src="./lib.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
