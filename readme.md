@@ -1,4 +1,4 @@
-#Star Wars API demo
+# Star Wars API demo
 
 <p align="center"><img src="https://media.giphy.com/media/PhuWbbLQet35HBB1yo/giphy.gif" width="80%"></p>
 
